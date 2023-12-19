@@ -1,0 +1,164 @@
+
+.contact {
+    color: white;
+    padding-bottom: 60px;
+    background-color: black;
+}
+
+.contact-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.contact-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 90px;
+    top: 10px;
+}
+
+.contact-head {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.contact-me .contact-box {
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    padding: 30px 20px 20px 20px;
+    margin: 13px 0;
+}
+
+.contact-me .contact-box .addr h5 {
+    color: lightgray;
+    font-weight: bold;
+}
+
+
+.contact-me .contact-box .addr a {
+    color: white;
+}
+
+.contact-me .contact-box>i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #18d26e;
+    padding: 12px 0;
+    margin-right: 20px;
+    background-color: rgb(93, 93, 93);
+    border-radius: 50%;
+}
+
+.contact-me .contact-box .addr .addr-icon {
+    display: flex;
+    color: white;
+}
+
+.contact-me .contact-box .addr .addr-icon i {
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.contact-me .contact-box .addr .addr-icon i:hover {
+    color: #18d26e;
+}
+
+.form-box {
+    margin: 10px 120px;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+    padding: 20px 30px;
+}
+
+.form-box input {
+    border-radius: 0;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgba(24, 210, 110, 0.3);
+    margin: 10px 0px;
+    height: 40px;
+    color: white;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.form-box textarea {
+    border-radius: 0;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgba(24, 210, 110, 0.3);
+    margin: 20px 0px;
+    border-radius: 2px;
+}
+
+.form-box .btn {
+    background-color: #18d26e;
+    padding: 10px 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.form-box .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .contact {
+        padding: 20px 12px;
+
+    }
+    .contact-me .contact-box>i {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        font-size: 18px;
+        color: #18d26e;
+        padding: 8px 0;
+        margin-right: 20px;
+        background-color: rgb(93, 93, 93);
+        border-radius: 50%;
+    }
+
+    /* .contact-me .contact-box .addr {
+        font-size: 18px;
+    } */
+
+    /* .contact-top {
+        padding: 0 20px;
+
+    } */
+
+    /* .contact-me {
+        padding: 0 20px;
+    } */
+}
+
+
+@media (max-width: 767.98px) {
+    .form-box {
+        padding: 10px 20px;
+        background-color: rgb(18, 18, 18);
+    }
+}
+@media (max-width: 375px) {
+    .form-box {
+        padding: 0;
+        background-color: black;
+    }
+    .contact-me .contact-box .addr p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .form-box {
+        margin: 10px 0;
+    }
+}

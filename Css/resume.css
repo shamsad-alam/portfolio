@@ -1,0 +1,169 @@
+
+.resume {
+    color: white;
+    padding: 0px 0 50px 0;
+    background-color: black;
+}
+
+.resume-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.resume-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 80px;
+    top: 10px;
+}
+
+.resume-head {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.resume-main .resu-main-t h3 {
+    font-weight: bold;
+    margin: 40px 0 30px 0;
+}
+
+.resume-main .resu-box h5 {
+    color: #18d26e;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.resume-main .resu-box .resu-box-title .clend {
+    width: 140px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.resume-main .resu-box .resu-box-title a {
+    font-size: 18px;
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+}
+
+.resume-main .resu-box .resu-box-title .p-last {
+    font-size: 18px;
+    margin: 10px 0 35px 0;
+}
+
+.resume-main .resu-box {
+    position: relative;
+    padding-left: 30px;
+}
+
+.resume-main .resu-box::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+.resume-main .resu-box .time-line {
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #18d26e;
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.btn i {
+    color: white;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 40px 0 0 0;
+    border: 2px solid #18d26e;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #18d26e;
+    top: 0%;
+    right: 100%;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    right: 0;
+}
+/* .btn:hover {
+    border: 2px solid #18d26e;
+    background-color: #18d26e;
+} */
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .resume {
+        padding: 20px 12px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .resume-main .resu-box {
+        padding-left: 22px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+
+    /* .resume-main {
+        padding: 0 20px;
+    } */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

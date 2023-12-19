@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="container">
+            <div class="toglemenu" onclick="myFunction(this)">
+                <div class="togle" onclick="togle2()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Shamsad Alam</h1>
+                <p>I'm a passionate <span>Frontent Developer</span> from Kolkata West Bengal</p>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./services.html">Service</a></li>
+                        <li><a href="./port.html">Portfolio</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="link">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        function togle2() {
+            var nave = document.querySelector("#menu");
+            if (nave.style.display == "block") {
+                nave.style.display = "none";
+            } else {
+                nave.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

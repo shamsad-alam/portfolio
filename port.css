@@ -1,0 +1,216 @@
+.portfolio {
+    color: white;
+    padding-bottom: 50px;
+    background-color: black;
+    height: fit-content;
+}
+
+.resume-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.resume-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 105px;
+    top: 10px;
+}
+
+.resume-head {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 50px 0 5px 0;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    /* background-color: inherit; */
+    /* float: left; */
+    font-weight: 500;
+    /* font-weight: bold; */
+    border: none;
+    outline: none;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 20px;
+    margin: 4px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #18d26e;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #18d26e;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+.tabcontent .tab_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+
+}
+.tabcontent .tab_img .box1{
+    /* width: 31%; */
+    /* width: calc(100% / 3 - 20px); */
+    position: relative;
+}
+.tabcontent .tab_img .box1::after{
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 50px;
+    bottom: 50px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.tabcontent .tab_img .box1:hover::after{
+    left: 12px;
+    right: 12px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 1;
+}
+
+
+.tabcontent .tab_img .box1 .box1_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.tabcontent .tab_img .box1 .box1_text span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #18d26e;
+    cursor: pointer;
+}
+.tabcontent .tab_img .box1 .box1_text::before{
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    position: absolute;
+    top: -80%;
+    left: -100%;    
+}
+.tabcontent .tab_img .box1 .box1_text::after{
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    position: absolute;
+    right: -100%;
+    bottom: -80%;    
+}
+.tabcontent .tab_img .box1:hover .box1_text{
+    opacity: 1;
+}
+
+
+.tabcontent .tab_img .box1 img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+/*==================================== popup_container =========================*/
+.popup_container{
+    width: 100%;
+}
+.popup_container .popup_image{
+    width: 90%;
+    height: 90vh;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+.popup_container .popup_image>span{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.popup_container .popup_image img{
+    width: 100%;
+    object-fit: cover;
+}
+.popup_image .project_info ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.popup_image .project_info ul li{
+    margin: 10px 0;
+    font-weight: 500;
+}
+.popup_image .project_info ul li a{
+    text-decoration: none;
+    color: #18d26e;
+}
+.popup_image .project_info p{
+    font-size: 18px;
+
+}
+
+
+@media (max-width: 575.98px) {
+    .portfolio {
+        padding: 20px 12px;
+    }
+    .tabcontent {
+        padding: 0;
+    }
+
+    .tabcontent .tab_img .box1{
+        padding: 0;
+    }
+}

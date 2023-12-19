@@ -1,0 +1,108 @@
+
+.service {
+    color: white;
+    padding-bottom: 60px;
+    background-color: black;
+}
+
+.service-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.service-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 90px;
+    top: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.service-head {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+.service-box .row .col{
+    /* width: calc(100% / 3 - 10px); */
+    display: flex;
+    align-items: stretch;
+    /* flex-wrap: wrap; */
+
+}
+
+.service-box .service-item {
+    background-color: rgb(35, 35, 35);
+    padding: 70px 30px;
+    text-align: center;
+    margin: 10px 0;
+    transition: width, ease-in-out 0.3s;
+}
+
+.service-box .service-item:hover {
+    background-color: #18d26e;
+    color: white;
+}
+
+
+.service-box .service-item i {
+    background-color: #18d26e;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: -8px -8px 0px rgba(24, 210, 110, 0.2);
+}
+.service-box .service-item:hover i {
+    background-color: white;
+    color: #18d26e;
+    box-shadow: -8px -8px 0px rgb(14, 178, 90);
+
+}
+
+/* .service-box .service-item i:hover{
+    background-color: white;
+    color: #18d26e;
+} */
+
+
+.service-box .service-item h4 {
+    margin: 20px 0;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .service {
+        padding: 20px 12px;
+    }
+    /* .service-box{
+        display: block;
+    } */
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .service-box {
+        display: block;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .service .service-box .row .col {
+        margin: 20px 0;
+    }
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

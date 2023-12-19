@@ -1,0 +1,269 @@
+.about {
+    color: white;
+    padding: 0px 0 120px 0;
+    background-color: black;
+}
+
+.about-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.about-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 70px;
+    top: 10px;
+}
+
+.about-head {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.about-main .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.about-dec h3 {
+    color: #18d26e;
+    font-weight: 600;
+}
+
+.about-main .about-dec .first {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.about-main .about-dec p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.about-main .details .detail-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.about-main .details .detail-item h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.about-main .details .detail-item p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-main .details .detail-item i {
+    color: #18d26e;
+}
+
+
+/* ===================================== client-item ================================= */
+.client {
+    margin: 70px 0;
+    align-items: center;
+}
+
+.client-item {
+    width: 23%;
+    color: white;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    border-radius: 5px;
+    margin: 25px 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-item i {
+    width: 65px;
+    height: 65px;
+    color: #18d26e;
+    font-size: 30px;
+    position: relative;
+    top: -20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item h2 {
+    font-size: 45px;
+
+}
+
+@media (max-width: 767.98px) {
+    .client-item {
+        display: inline-block;
+        width: 96% !important;
+        margin: 25px auto;
+
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .client-item {
+        display: inline-flex;
+        width: 45%;
+    }
+}
+
+/* ====================================== SKILLS ================================== */
+.skill {
+    margin: 70px 0;
+}
+
+.skill .prog-item .prog-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 3px 0;
+}
+
+.skill .prog-item .prog-title h6 {
+    font-size: 16px;
+}
+
+.prog-item .progress .progress-bar {
+    background-color: #18d26e;
+}
+
+.prog-item .progress {
+    background-color: rgb(35, 35, 35);
+    border-radius: 0;
+    height: 10px;
+}
+
+/* ==================================TESTIMONIAL SECTION =========================== */
+/* ==================================TESTIMONIAL SECTION =========================== */
+
+.testi-title {
+    color: lightgrey;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.testi-title h6::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #18d26e;
+    left: 140px;
+    top: 10px;
+}
+
+.testimonial .testi-title h6 {
+    margin: 30px 0;
+
+}
+
+.testi-item {
+    background-color: rgb(35, 35, 35);
+    border-radius: 5px;
+}
+
+.testi-sec .testi-item .comm {
+    font-style: italic;
+    font-size: 17px;
+    padding: 20px 20px 70px 20px;
+}
+
+.testi-sec .testi-item i {
+    color: rgb(96, 96, 96);
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.testi-sec .testi-item .testi-img {
+    position: relative;
+}
+
+
+.testi-sec .testi-item .testi-img img {
+    position: absolute;
+    left: 30px;
+    bottom: -25px;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 5px solid rgba(24, 210, 110, 0.3);
+}
+
+.testi-sec .testi-item .testi-img-text {
+    position: absolute;
+    left: 30px;
+    top: 35px;
+}
+
+.testi-sec .testi-item .testi-img-text h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 500;
+}
+
+
+/* =========================== Responsive =================================== */
+/* =========================== Responsive ==================================== */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .about {
+        padding: 20px 12px 130px 12px;
+    }
+    .about-main .details .detail-item p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .about-main .details .detail-item h6 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+/* 
+    .about .about-top {
+        padding-top: 50px;
+    } */
+
+    .about-main .about-dec {
+        padding-top: 20px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 319px) {
+    .skill .prog-item .prog-title h6 {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .testimonial .testi-sec .testi-item {
+        margin-bottom: 120px;
+    }
+
+    .testimonial .testi-sec .tisti-last {
+        margin-bottom: -120px;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
