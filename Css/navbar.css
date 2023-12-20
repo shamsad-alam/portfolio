@@ -51,6 +51,7 @@
     font-family: 'Franklin Gothic Medium', sans-serif;
     color: white;
     font-weight: bold;
+    
 }
 
 nav #menu {
@@ -72,6 +73,9 @@ nav #menu li a {
     font-weight: 500;
     color: white;
     position: relative;
+}
+nav #menu li a .active{
+    color: #18d26e;
 }
 
 nav #menu li a::after {
@@ -113,6 +117,7 @@ nav #menu li:hover a::after {
     .content h1 {
         font-size: 30px;
     }
+
 
 }
 

@@ -10,3 +10,6 @@ function togle2() {
         nave.style.display = "block";
     }
 }
+
+
+// document.querySelector("#menu li a").classList.add("active");
