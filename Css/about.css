@@ -1,6 +1,6 @@
 .about {
     color: white;
-    padding: 0px 0 120px 0;
+    padding-bottom: 30px;
     background-color: black;
 }
 
@@ -27,7 +27,7 @@
 .about-main .image img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit:cover;
     margin: 20px 0;
 }
 
@@ -242,7 +242,10 @@
         padding-top: 20px;
     }
 }
+@media (max-width: 767.98px) {
+    
 
+}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 319px) {
     .skill .prog-item .prog-title h6 {
@@ -258,6 +261,9 @@
 
     .testimonial .testi-sec .tisti-last {
         margin-bottom: -120px;
+    }
+    .about-main .image img {
+        object-fit:contain;
     }
 
 }
