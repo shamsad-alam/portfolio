@@ -1,6 +1,6 @@
 .about {
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 2px;
     background-color: black;
 }
 
@@ -222,7 +222,7 @@
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .about {
-        padding: 20px 12px 130px 12px;
+        padding: 20px 12px 5px 12px;
     }
     .about-main .details .detail-item p {
         font-size: 16px;
