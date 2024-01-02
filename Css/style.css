@@ -126,7 +126,7 @@ nav #menu li:hover a::after {
     margin: 10px 0px;
     margin-right: 12px;
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: rgb(49, 49, 49);
     border: 1px solid rgb(29, 214, 109, 0.4);
     display: flex;

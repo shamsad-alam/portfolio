@@ -40,6 +40,12 @@
 
 .contact-me .contact-box .addr a {
     color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contact-me .contact-box .addr a:hover{
+    color: #18d26e;
+    text-decoration: underline;
 }
 
 .contact-me .contact-box>i {
