@@ -4,6 +4,19 @@
     padding-bottom: 60px;
     background-color: black;
 }
+.logo{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    border-bottom: 1px solid black;
+}
+.logo:hover{
+    color: white;
+    border-bottom: 1px solid #18d26e;
+}
+#menu li .active{
+    color: #18d26e;
+}
 
 .contact-title {
     color: lightgrey;

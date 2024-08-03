@@ -73,6 +73,19 @@
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.logo{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    border-bottom: 1px solid black;
+}
+.logo:hover{
+    color: white;
+    border-bottom: 1px solid #18d26e;
+}
+#menu li .active{
+    color: #18d26e;
+}
 
 
 /* X-Small devices (portrait phones, less than 576px) */
